@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
-*{
+* {
     box-sizing: border-box;
 }
-body{
-    font-family: 'Ubuntu',sans-serif;
+
+body {
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
     height: 100vh;
     overflow: hidden;
     margin: 0;
 }
-.bg{
-    background: url('https://t3.ftcdn.net/jpg/02/65/79/44/360_F_265794447_2sauB9L7rGqjeVbnrZmVjypt1ZgLO0pH.jpg')no-repeat center center/cover;
-    position: relative;
+
+.bg {
+    background: url('https://images.unsplash.com/photo-1732762990635-a713a09e9025?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') 
+    no-repeat center center / cover; 
+    
+    position: absolute;
     top: 0;
     left: 0;
-    width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
-    filter: blur(0px);
+    width: 100vw;
+    height: 100vh;
+    filter: blur(0px); /* Start without blur, JS will handle this */
 }
 
-.loading-text{
+
+.loading-text {
     font-size: 50px;
     color: #fff;
+    position: relative;
+    z-index: 1;
 }
-
